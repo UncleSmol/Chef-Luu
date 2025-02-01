@@ -1,0 +1,83 @@
+/* ==============================================  
+   HELPER CLASSES AND UTILITIES
+   ============================================== */  
+
+/* ----------------------------------------------  
+   State Classes
+   ---------------------------------------------- */  
+/* Active state with smooth transitions */
+.active {
+     -webkit-transition: all .5s ease-in-out;
+     -moz-transition: all .5s ease-in-out;
+     -ms-transition: all .5s ease-in-out;
+     -o-transition: all .5s ease-in-out;
+     transition: all .5s ease-in-out;
+}
+
+/* Visibility state with transform */
+.shown {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+/* ----------------------------------------------  
+   Layout Utilities
+   ---------------------------------------------- */  
+/* Content wrapper for consistent spacing */
+.__content-wrapper {
+     width: 100%;
+     height: 100%;
+     position: relative;
+}
+
+/* ----------------------------------------------  
+   Overlay Effects
+   ---------------------------------------------- */  
+/* Full-screen overlay with blur effect */
+#overlay {
+   position: absolute;
+   top: 70px;
+   left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-backdrop-filter: blur(56px) saturate(80%);
+    backdrop-filter: blur(56px) saturate(80%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    z-index: 99;
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    
+}
+
+/*Hidden Class*/
+.__hidden{
+   opacity: 0;
+   -webkit-transform: translateX(100);
+   -moz-transform: translateX(100);
+   -ms-transform: translateX(100);
+   -o-transform: translateX(100);
+   transform: translateX(100%);
+   -webkit-transition: transform 0.5s ease-in-out;
+   -moz-transition: transform 0.5s ease-in-out;
+   -ms-transition: transform 0.5s ease-in-out;
+   -o-transition: transform 0.5s ease-in-out;
+   transition: transform 0.5s ease-in-out;
+}

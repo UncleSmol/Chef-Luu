@@ -1,0 +1,189 @@
+/* ==============================================  
+   CONTACT SECTION STYLES  
+   ============================================== */  
+
+/* ----------------------------------------------  
+   Base Section Structure
+   ---------------------------------------------- */  
+#contactSection {
+    padding: var(--spacing-xxl) var(--spacing-xl);
+    background-color: var(--background-color);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.__contact-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-xxl);
+}
+
+/* ----------------------------------------------  
+   Contact Header
+   ---------------------------------------------- */  
+.__contact-header {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.__contact-header h2 {
+    font-size: var(--font-size-xxl);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.__contact-header p {
+    font-size: var(--font-size-lg);
+    color: var(--secondary-text-color);
+}
+
+/* ----------------------------------------------  
+   Contact Form
+   ---------------------------------------------- */  
+.__contact-form {
+    background: rgba(255, 255, 255, 0.85);
+    padding: var(--spacing-xl);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.__form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.__form-group label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+
+.__form-group input,
+.__form-group textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--primary-text-color);
+    font-family: "Sour Gummy", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.__form-group input:focus,
+.__form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.__submit-btn {
+    width: 100%;
+    padding: var(--spacing-md);
+    background: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 10px;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.__submit-btn:hover {
+    background: var(--primary-color-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(224, 12, 143, 0.3);
+}
+
+/* ----------------------------------------------  
+   Contact Info
+   ---------------------------------------------- */  
+.__contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.__info-item {
+    padding: var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.__info-item h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-md);
+}
+
+.__info-item p {
+    color: var(--secondary-text-color);
+    font-size: var(--font-size-base);
+}
+
+/* ----------------------------------------------  
+   Social Links
+   ---------------------------------------------- */  
+.__social-links {
+    margin-top: auto;
+}
+
+.__social-links h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-md);
+}
+
+.__social-icons {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.__social-icon {
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--primary-color);
+    color: var(--background-color);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.__social-icon:hover {
+    background: var(--primary-color-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(224, 12, 143, 0.3);
+}
+
+/* ----------------------------------------------  
+   Media Queries
+   ---------------------------------------------- */  
+@media (max-width: 768px) {
+    .__contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .__contact-info {
+        order: -1;
+    }
+}
+
+@media (max-width: 480px) {
+    #contactSection {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .__contact-header h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .__social-icons {
+        flex-direction: column;
+    }
+
+    .__social-icon {
+        text-align: center;
+    }
+}

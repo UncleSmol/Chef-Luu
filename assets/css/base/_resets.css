@@ -1,0 +1,145 @@
+/* ==============================================  
+   CUSTOM CSS RESET (MODERN BEST PRACTICES)  
+   ============================================== */  
+
+/* ----------------------------------------------  
+   Core Resets  
+   ---------------------------------------------- */  
+/*  
+  1. Use a more intuitive box model  
+  2. Prevent padding/borders from affecting element dimensions  
+*/  
+*,  
+*::before,  
+*::after {  
+  box-sizing: border-box; /* [1][2] */  
+}  
+
+/*  
+  Reset default margins/paddings and baseline alignment  
+  - Removes inconsistent spacing across browsers  
+  - Ensures consistent baseline for typography  
+*/  
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center, dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend, table, caption,  
+tbody, tfoot, thead, tr, th, td, article, aside,  
+canvas, details, embed, figure, figcaption,  
+footer, header, hgroup, menu, nav, output, ruby,  
+section, summary, time, mark, audio, video {  
+  margin: 0;  
+  padding: 0;  
+  border: 0;  
+  vertical-align: baseline;  
+}  
+
+/* ----------------------------------------------  
+   HTML5 Element Reset  
+   ---------------------------------------------- */  
+/*  
+  Render HTML5 structural elements as blocks  
+  in legacy browsers  
+*/  
+article, aside, details, figcaption, figure,  
+footer, header, hgroup, menu, nav, section {  
+  display: block;  
+}  
+
+/* ----------------------------------------------  
+   Typography Reset  
+   ---------------------------------------------- */  
+/*  
+  1. Prevent font inflation in mobile browsers  
+  2. Use system fonts for performance until web fonts load  
+  3. Set accessible line-height  
+*/  
+html {  
+  -webkit-text-size-adjust: 100%; /* [1] */
+  text-size-adjust: 100%;
+  height: 100%;  
+  overscroll-behavior: none;
+  background-color: var(--background-color);
+  scrollbar-width: none;
+}  
+
+body {
+  line-height: 1.5; /* [3] */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overscroll-behavior: none;
+  background-color: var(--background-color);
+}  
+
+/*  
+  Inherit fonts for form controls  
+  - Prevent inconsistent font styles in inputs/buttons  
+*/  
+input, button, textarea, select {  
+  font: inherit;  
+}  
+
+/* ----------------------------------------------  
+   List and Quote Resets  
+   ---------------------------------------------- */  
+/* Remove default list styling */  
+ol, ul {  
+  list-style: none;  
+}  
+
+/* Neutralize quotes */  
+blockquote, q {  
+  quotes: none;  
+}  
+
+blockquote::before,  
+blockquote::after,  
+q::before,  
+q::after {  
+  content: '';  
+  content: none;  
+}  
+
+/* ----------------------------------------------  
+   Table Reset  
+   ---------------------------------------------- */  
+/*  
+  Collapse table borders and reset spacing  
+  - Ensures consistent table rendering  
+*/  
+table {  
+  border-collapse: collapse;  
+  border-spacing: 0;  
+}  
+
+/* ----------------------------------------------  
+   Interactive Element Reset  
+   ---------------------------------------------- */  
+/*  
+  1. Remove default button styling  
+  2. Ensure pointer cursor for interactive elements  
+*/  
+button {  
+  background: none;  
+  border: none;  
+  padding: 0;  
+  cursor: pointer; 
+}  
+
+/*  
+  Reset anchor styling while maintaining accessibility  
+  - Preserve default focus states  
+*/  
+a {  
+  text-decoration: none;  
+  color: inherit;  
+}  
+
+/* ----------------------------------------------  
+   Accessibility Enhancements  
+   ---------------------------------------------- */  
+/*  
+  Restore focus styles for keyboard

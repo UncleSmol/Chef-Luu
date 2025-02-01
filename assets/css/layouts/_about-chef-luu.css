@@ -1,0 +1,362 @@
+/* ==============================================  
+   ABOUT SECTION STYLES  
+   ============================================== */  
+
+/* ----------------------------------------------  
+   Base Section Structure
+   ---------------------------------------------- */  
+#aboutSection {
+    padding: var(--spacing-xxl) var(--spacing-xl);
+    background-color: var(--background-color);
+}
+
+.__about-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------  
+   About Header
+   ---------------------------------------------- */  
+.__about-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xxl);
+}
+
+.__about-header h2 {
+    font-size: var(--font-size-xxl);
+    color: var(--primary-text-color);
+    margin-bottom: var(--spacing-xs);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.__subtitle {
+    font-size: var(--font-size-md);
+    color: var(--secondary-text-color);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+/* ----------------------------------------------  
+   Introduction Block
+   ---------------------------------------------- */  
+.__intro-block {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xxl);
+}
+
+.__profile-image {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.__profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.__intro-text {
+    font-size: var(--font-size-lg);
+    line-height: 1.8;
+    color: var(--secondary-text-color);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+/* ----------------------------------------------  
+   Journey Timeline
+   ---------------------------------------------- */  
+.__journey-block {
+    margin-bottom: var(--spacing-xxl);
+}
+
+.__journey-block h3 {
+    font-size: var(--font-size-xl);
+    color: var(--primary-text-color);
+    margin-bottom: var(--spacing-lg);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.__content h4{
+    color: var(--primary-color);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.__timeline {
+    position: relative;
+    padding-left: var(--spacing-xl);
+    font-family: "Sour Gummy", sans-serif;
+    color: var(--primary-text-color);
+}
+
+.__timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: var(--primary-color);
+}
+
+.__timeline-item {
+    position: relative;
+    padding-bottom: var(--spacing-lg);
+}
+
+.__date {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+/* ----------------------------------------------  
+   Expertise Grid
+   ---------------------------------------------- */  
+.__expertise-block {
+    margin-bottom: var(--spacing-xxl);
+}
+
+.__expertise-block h3{
+    color: var(--primary-text-color);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.__expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.__expertise-item {
+    padding: var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.__expertise-item h4 {
+    color: var(--primary-color);
+    font-family: "Sour Gummy", sans-serif;
+    font-size: var(--font-size-md);
+}
+
+.__expertise-item p{
+    color: var(--secondary-text-color);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.__expertise-item:hover {
+    transform: translateY(-5px);
+}
+
+/* ----------------------------------------------  
+   Vision Section
+   ---------------------------------------------- */  
+.__vision-block {
+    margin-bottom: var(--spacing-xxl);
+}
+
+.__vision-block h3{
+    color: var(--primary-text-color);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.__vision-block h4{
+    color: var(--primary-color);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.__vision-block p{
+    color: var(--secondary-text-color);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.__vision-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.__vision-image {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.__vision-text ul {
+    margin-top: var(--spacing-md);
+    padding-left: var(--spacing-md);
+}
+
+.__vision-text li {
+    margin-bottom: var(--spacing-xs);
+    color: var(--secondary-text-color);
+    font-family: "Sour Gummy", sans-serif;
+    list-style-type:lower-roman;
+}
+
+/* ----------------------------------------------  
+   Philosophy Section
+   ---------------------------------------------- */  
+.__philosophy-block {
+    text-align: center;
+    margin-bottom: var(--spacing-xxl);
+    padding: var(--spacing-xl);
+    background: rgba(224, 12, 143, 0.05);
+    border-radius: 20px;
+    font-family: "Sour Gummy", sans-serif;
+    color: var(--primary-text-color);
+}
+
+.__philosophy-block h3{
+    color: var(--primary-text-color);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+
+
+blockquote {
+    font-size: var(--font-size-xl);
+    color: var(--primary-color);
+    font-family: "Sour Gummy", sans-serif;
+    margin: var(--spacing-lg) 0;
+}
+
+/* ----------------------------------------------  
+   Skills Section
+   ---------------------------------------------- */  
+   .__skills-block h3{
+    color: var(--primary-text-color);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.__skills-grid {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.__skill-item {
+    display: grid;
+    gap: var(--spacing-xs);
+}
+
+.__skill-name {
+    color: var(--secondary-text-color);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.__skill-bar {
+    height: 8px;
+    background: rgba(224, 12, 143, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.__skill-bar::before {
+    content: '';
+    display: block;
+    height: 100%;
+    background: var(--primary-color);
+    width: var(--level);
+    transition: width 1s ease;
+}
+
+/* ----------------------------------------------  
+   CTA Section
+   ---------------------------------------------- */  
+.__about-cta {
+    text-align: center;
+    padding: var(--spacing-xl);
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.__about-cta h3{
+    color: var(--primary-color);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.__about-cta p {
+    color: var(--secondary-text-color);
+    font-family: "Sour Gummy", sans-serif;
+    margin-bottom: var(--spacing-md);
+}
+
+.__cta-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    margin-top: var(--spacing-lg);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.__btn-primary,
+.__btn-secondary {
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.__btn-primary {
+    background: var(--primary-color);
+    color: var(--background-color);
+}
+
+.__btn-secondary {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.__btn-primary:hover,
+.__btn-secondary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(224, 12, 143, 0.2);
+}
+
+/* ----------------------------------------------  
+   Media Queries
+   ---------------------------------------------- */  
+@media (max-width: 768px) {
+    .__intro-block {
+        grid-template-columns: 1fr;
+    }
+
+    .__vision-content {
+        grid-template-columns: 1fr;
+    }
+
+    .__expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .__cta-buttons {
+        flex-direction: column;
+    }
+
+    blockquote {
+        font-size: var(--font-size-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    #aboutSection {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .__about-header h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .__intro-text {
+        font-size: var(--font-size-base);
+    }
+}

@@ -1,0 +1,157 @@
+/* ==============================================  
+   WORK SECTION STYLES  
+   ============================================== */  
+
+/* ----------------------------------------------  
+   Base Section Structure
+   ---------------------------------------------- */  
+#workSection {
+    padding: var(--spacing-xxl) var(--spacing-xl);
+    background-color: var(--background-color);
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.__work-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------  
+   Work Header
+   ---------------------------------------------- */  
+.__work-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xxl);
+}
+
+.__work-header h2 {
+    font-size: var(--font-size-xxl);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.__work-header p {
+    font-size: var(--font-size-lg);
+    color: var(--secondary-text-color);
+}
+
+/* ----------------------------------------------  
+   Work Gallery
+   ---------------------------------------------- */  
+.__work-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xxl);
+}
+
+.__work-item {
+    background: rgba(255, 255, 255, 0.85);
+    padding: var(--spacing-xl);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.__work-item h3 {
+    font-size: var(--font-size-xl);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+.__work-item p {
+    color: var(--secondary-text-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* ----------------------------------------------  
+   Image Grid
+   ---------------------------------------------- */  
+.__image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.__image-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.__image-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ----------------------------------------------  
+   Image Modal
+   ---------------------------------------------- */  
+.__modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.__modal.active {
+    display: flex;
+}
+
+.__modal-content {
+    max-width: 90%;
+    max-height: 90vh;
+}
+
+.__modal-content img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.__modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* ----------------------------------------------  
+   Media Queries
+   ---------------------------------------------- */  
+@media (max-width: 768px) {
+    #workSection {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .__work-item {
+        padding: var(--spacing-lg);
+    }
+
+    .__image-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .__work-header h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .__work-item h3 {
+        font-size: var(--font-size-lg);
+    }
+
+    .__image-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,68 @@
+/* ==============================================  
+   CSS CUSTOM PROPERTIES (VARIABLES)  
+   ============================================== */  
+
+/* ----------------------------------------------  
+   Color System  
+   ---------------------------------------------- */  
+:root {
+    /* Primary Colors */
+    --primary-color: #E00C8F;  
+    --primary-color-light: #FF99D6;  
+    --primary-color-dark: #B0006E;  
+
+    /* Neutral Colors */
+    --background-color: #FFFFFF;  
+    --surface-color: #F8F8F8;  
+    --border-color: #E0E0E0;
+
+    /* Text & Contrast Colors */
+    --primary-text-color: #2A2A2A;  
+    --secondary-text-color: #666666;  
+    --on-primary-color: #FFFFFF;  
+
+    /* Status Colors */
+    --success-color: #4CAF50;  
+    --error-color: #F44336;
+}
+
+/* ----------------------------------------------  
+   Typography System
+   ---------------------------------------------- */  
+:root {
+    /* Font Families */
+    --font-family-primary: 'Sour Gummy', sans-serif;
+    --font-family-accent: 'Neonderthaw', cursive;
+    
+    /* Font Size Scale */
+    --font-size-xs: 12px;    /* Extra small text */
+    --font-size-sm: 14px;    /* Small text */
+    --font-size-base: 16px;  /* Base text size */
+    --font-size-md: 20px;    /* Medium text */
+    --font-size-lg: 24px;    /* Large text */
+    --font-size-xl: 32px;    /* Extra large text */
+    --font-size-xxl: 48px;   /* Display text */
+}
+
+/* ----------------------------------------------  
+   Spacing System
+   ---------------------------------------------- */  
+:root {
+    /* Consistent spacing scale */
+    --spacing-xxs: 4px;     /* Micro spacing */
+    --spacing-xs: 8px;      /* Extra small spacing */
+    --spacing-sm: 16px;     /* Small spacing */
+    --spacing-md: 24px;     /* Medium spacing */
+    --spacing-lg: 32px;     /* Large spacing */
+    --spacing-xl: 48px;     /* Extra large spacing */
+    --spacing-xxl: 64px;    /* Massive spacing */
+}
+
+/* ----------------------------------------------  
+   Effects System
+   ---------------------------------------------- */  
+:root {
+    /* Shadow Effects */
+    --box-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);   /* Subtle elevation */
+    --box-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.2);  /* Prominent elevation */
+}

@@ -1,0 +1,19 @@
+/*Main Tag Styling*/
+main{
+    height: calc(100vh - 50px);
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #e3e3e3;
+}
+
+p,a,span{
+    color: #919191;
+}
+
+
+
