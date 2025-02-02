@@ -80,3 +80,12 @@
    -o-transition: transform 0.5s ease-in-out;
    transition: transform 0.5s ease-in-out;
 }
+
+.__d-none{
+   display: none;
+}
+
+/*Complementary Background*/
+.__c-background{
+   background-color: var(--complementary-background-color);
+}
