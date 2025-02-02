@@ -12,6 +12,19 @@ export const hamburgerToggle = () => {
         hamSpan.forEach((span) => span.classList.toggle("active"));
 		navItems.forEach((item) => item.classList.toggle("shown"));
 		mobileNav.classList.toggle("shown");
+
+		//mobile nav hide if nav item or anywhere is clicked
+		document.addEventListener("click", (e) => {
+			if (
+				!hamburgerMenu.contains(e.target) &&
+				!e.target.matches(".__nav-item")
+			) {
+				hamSpan.forEach((span) => span.classList.remove("active"));
+				navItems.forEach((item) => item.classList.remove("shown"));
+				mobileNav.classList.remove("shown");
+			}
+		});
+
     });
 }
 

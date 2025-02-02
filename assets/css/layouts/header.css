@@ -158,8 +158,7 @@ header {
     left: -150%;
     width: 300%;
     height: 100dvh;
-    background-image: linear-gradient(to bottom, white 30%, transparent);
-    
+    background-image: linear-gradient(to bottom, white 50%, transparent);
     z-index: -1;
 }
 
